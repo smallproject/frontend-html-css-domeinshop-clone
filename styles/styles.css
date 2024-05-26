@@ -23,16 +23,22 @@ Table of Contents:
 
 body {
     font-family: 'Poppins', sans-serif;
+    /*align-items: center;*/
 }
 
 main {
     max-width: 1000px;
     /*margin: 0 0 20px 20px;*/
     /*position: relative; ;*/
+    /*justify-content: center;*/
+    /*display: flex;*/
 }
 /*////////////////////////
     2. Typography
 ////////////////////////*/
+* {
+    color: #1C2B32;
+}
 h1  {
     font-family: inherit;
     font-size: 100px;
@@ -62,11 +68,13 @@ header {
     background-image: url("../assets/images/mountains.jpg");
     background-size:100%;
     background-repeat: no-repeat;
+    /*text-align: center;*/
     /*position: relative;*/
 }
 
-header h1 {
+header h1 {git status
     margin: -1px;
+    text-align: center;
 }
 
 .header-details {
@@ -77,6 +85,10 @@ header h1 {
     padding-bottom: 200px;
 }
 
+form {
+    margin: -5px;
+}
+
 
 
 /*///////////// 3.2 Testimonial /////////////*/
@@ -85,7 +97,7 @@ blockquote {
     /*background-color: black;*/
     /*color: white;*/
     /*width: 100%;*/
-    box-shadow: 5px 5px 5px 5px black;
+    box-shadow: 2px 3px 4px 4px #899CA0;
     border-radius: 10px;
     /*margin: 10px;*/
 }
@@ -116,16 +128,16 @@ blockquote>span {
     max-width: 100%;
 }
 
-.customer-service>img {
+.customer-service img {
     width: 100%;
 }
 
 .customer-service a {
     background-color: #1C2B32;
-    margin: 20px;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
     border-radius: 100px;
-    color: #899CA0;
+    color: white;
 }
 /*a:hover {*/
 /*    !*color:black;*!*/
@@ -134,19 +146,22 @@ blockquote>span {
 /*}*/
 
 /*///////////// 3.4 Faq /////////////*/
-details {
-    background-color: #1C2B32;
+
+details[Open] {
+    /*padding: 20px;*/
+    /*margin: 20px;*/
+}
+
+details>div{
     color: #899CA0;
+    background-color: #1C2B32;
+    padding: 40px;
+    border-radius: 20px;
 }
 
 summary {
     background-color: white;
     color: black;
-}
-
-details[Open] {
-    padding: 20px;
-    margin: 20px;
 }
 
 
@@ -156,6 +171,6 @@ footer div{
     /*maxwidth: 20px;*/
     background-color: #1C2B32;
     text-align: center;
-    color: #899CA0;
+    color: white;
     padding-top: 10px;
 }
