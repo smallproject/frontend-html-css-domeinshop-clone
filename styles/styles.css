@@ -19,11 +19,7 @@ Table of Contents:
 ////////////////////////*/
 * {
     box-sizing: border-box;
-}
-
-body {
     font-family: 'Poppins', sans-serif;
-    /*align-items: center;*/
 }
 
 main {
@@ -70,9 +66,10 @@ header {
     background-repeat: no-repeat;
     /*text-align: center;*/
     /*position: relative;*/
+    text-align: center;
 }
 
-header h1 {git status
+header h1 {
     margin: -1px;
     text-align: center;
 }
@@ -80,13 +77,34 @@ header h1 {git status
 .header-details {
     max-width: 1000px;
     /*margin-bottom: 2000px;*/
-    text-align: center;
+    /*text-align: center;*/
     padding-top: 20px;
     padding-bottom: 200px;
 }
 
-form {
-    margin: -5px;
+form>div {
+    display: table;
+    margin: 0 auto;
+    border: medium solid #1C2B32;
+    width: 400px;
+    border-radius: 50px;
+    /*background-color: #1C2B32;*/
+    }
+
+div>input{
+    height: 60px;
+    border: none;
+    background-color: transparent;
+    width: 50%;
+    /*box-sizing: border-box;*/
+}
+
+div>input+input {
+    background-color: #1C2B32;
+    /*box-sizing: border-box;*/
+    width: 50%;
+    /*max-width: none;*/
+    color: #899CA0;
 }
 
 
@@ -166,11 +184,30 @@ summary {
 
 
 /*///////////// 3.5 Footer /////////////*/
-footer div{
-    height: 50px;
+.container{
+    position: relative;
+    height: 70px;
     /*maxwidth: 20px;*/
     background-color: #1C2B32;
-    text-align: center;
-    color: white;
+    color: #899CA0;
     padding-top: 10px;
+    width: 100%;
+    /*box-sizing: border-box;*/
+
+}
+.content {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    right: 35%;
+    color: #899CA0;
+    -ms-transform: translateX(-10%) translateY(-50%);
+    transform: translateX(-10%) translateY(-50%);
+}
+
+footer span {
+    color: #899CA0;
+}
+footer time {
+    color: #899CA0;
 }
