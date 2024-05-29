@@ -120,8 +120,8 @@ blockquote {
     /*margin: 10px;*/
 }
 
-blockquote>span {
-    text-align: center;
+.testimonials div {
+    display: flex;
 }
 
 .testimonials img {
@@ -132,7 +132,8 @@ blockquote>span {
 .testimonials figure {
     /*background-color: black;*/
     display: flex;
-    vertical-align: bottom;
+    vertical-align: middle;
+    /*margin-right: 40px;*/
 }
 .testimonials figure>figcaption {
     text-align: center;
